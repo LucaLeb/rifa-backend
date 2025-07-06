@@ -8,4 +8,4 @@ const reservaSchema = new moongoose.Schema({
     mp_preference_id: String
 });
 
-export default moongoose.model("Reserva". reservaSchema);
+export default moongoose.model("reserva". reservaSchema);
