@@ -1,4 +1,4 @@
-import Reserva from "../models/reserva";
+import Reserva from "../models/reserva.js";
 
 export async function crearReserva(req, res) {
     const { nombre, dni, numeros } = req.body;
