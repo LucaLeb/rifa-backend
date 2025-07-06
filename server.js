@@ -13,5 +13,4 @@ app.use(express.json());
 app.use("/api", reservaRoutes);
 
 // Conexion a MongoDB y arranque del servidor
-mongoose
-.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI)
