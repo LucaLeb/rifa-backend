@@ -1,11 +1,10 @@
 import mongoose from "mongoose";
 
 const reservaSchema = new mongoose.Schema({
-  nombre: String,
-  dni: String,
-  numeros: [Number],
-  estado: { type: String, default: "pendiente" },
-  mp_preference_id: String
+  numero: { type: Number, required: true, unique: true },
+  nombre: { type: String, required: true },
+  telefono: { type: String, required: true },
+  fecha: { type: Date, default: Date.now }
 });
 
-export default mongoose.model('reserva', reservaSchema);
+export default mongoose.model("Reserva", reservaSchema);
