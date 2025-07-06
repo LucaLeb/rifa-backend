@@ -1,6 +1,6 @@
-import moongoose from "mongoose";
+import mongoose from "mongoose";
 
-const reservaSchema = new moongoose.Schema({
+const reservaSchema = new mongoose.Schema({
     nombre: String,
     dni: String,
     numeros: [Number],
@@ -8,4 +8,4 @@ const reservaSchema = new moongoose.Schema({
     mp_preference_id: String
 });
 
-export default moongoose.model("reserva". reservaSchema);
+export default mongoose.model("reserva". reservaSchema);
