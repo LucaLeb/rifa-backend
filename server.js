@@ -14,4 +14,4 @@ app.use("/api", reservaRoutes);
 
 // Conexion a MongoDB y arranque del servidor
 mongoose
-.connect(ProcessingInstruction.env.MONGO_URI)
+.connect(process.env.MONGO_URI)
